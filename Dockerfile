@@ -32,3 +32,6 @@ ENV PATH $ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH
 # Update of Android SDK
 RUN echo y | android update sdk --no-ui --all --filter "build-tools-25.0.2,android-25,extra-google-gcm,extra-android-m2repository,extra-android-support,extra-google-google_play_services,extra-google-m2repository,extra-google-play_billing,tools,platform-tools"
 
+# Install Git
+RUN apt-get -y install git
+
